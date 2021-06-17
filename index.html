@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>App</title>
+</head>
+<body>
+    <h1>Covid-19 Device</h1>
+    <div id="form">
+        <label for="frequency">Enter frequency:</label>
+        <input type="text" name="frequency" class="input" id="input_freq">
+        <input type="button" class="submit" value="Change" onclick="createFreq()">
+        <br><br>
+        <label for="threshold">&nbsp;Enter threshold:</label>
+        <input type="text" name="threshold" class="input" id="input_threshold">
+        <input type="button" class="submit" value="Change" onclick="createTresh()">
+        <br><br>
+        <input type="button" id="on_btn" value="ON" onclick="windows.location.href='/app/state/on'">
+        <input type="button" id="off_btn" value="OFF" onclick="windows.location.href='/app/state/off'">
+    </div>
+    <div class="footer">
+        &copy; Proiect SM 2021
+    </div>
+</body>
+</html>
