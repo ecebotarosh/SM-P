@@ -2,6 +2,7 @@
  
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from uvicorn import run
 from os import environ
 from subprocess import Popen, PIPE
@@ -17,9 +18,13 @@ content = """
 </body>
 </html>
 """
+
+with open('index.html') as f:
+    content = f.read()
  
  
 app = FastAPI()
+app.mount('/static', StaticFiles(directory="static"), name="static")
 RPI_CONTROLLER_SCRIPT_PATH = "/home/pi/script.py"
  
  
