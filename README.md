@@ -7,7 +7,7 @@ This is a project that enforces social distancing norms.
 * Revoke the administrative privileges from the user `pi`
 * Create a virtual environment using Python 3.8 (Python 3.9 is not currently supported)
 * `pip install -r requirements.txt`
-* `./app.py`
+* `python3 app.py`
 
 Now you have a web server running on port 8080 that hosts a web application that controls the Raspberry Pi.
 You can change the buzzer frequency, configure the distance at which it starts to buzz or turn the device on and off.
